@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_array - Prints n elements of an array of integers
@@ -10,10 +11,9 @@ void print_array(int *a, int n)
 int i;
 for (i = 0; i < n; i++)
 {
- _putchar(a[i] + '0'); /* Convert integer to character */
+printf("%d", a[i]);
 if (i != n - 1)
-_putchar(','); /* Print comma and space for all but last element */
-_putchar(' ');
+printf(", "); /* Print comma and space for all but last element */
 }
-_putchar('\n');
+printf("\n");
 }
